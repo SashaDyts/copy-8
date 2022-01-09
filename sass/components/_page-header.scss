@@ -1,4 +1,6 @@
 .page-header {
+  padding: 10px 0;
+
   border-bottom: 1px solid var(--header-border);
   &__container {
     display: flex;
@@ -6,13 +8,19 @@
   }
 }
 .menu-thumb {
-  display: flex;
+  // display: none;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   @media screen and (max-width: 768px) {
     position: absolute;
     top: 0;
     left: 0;
+
+    padding: 48px 40px;
     width: 480px;
 
     background-color: var(--primary-white-color);
@@ -24,6 +32,8 @@
   height: 40px;
   padding: 0;
   border: 0;
+
+  margin-left: auto;
 
   cursor: pointer;
 
