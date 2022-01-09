@@ -5,16 +5,15 @@
   &__container {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
   }
 }
 .menu-thumb {
-  // display: none;
-  // max-width: 480px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
+  display: none;
+  width: 100%;
   @media screen and (max-width: 768px) {
     position: absolute;
     top: 0;
@@ -26,6 +25,7 @@
     background-color: var(--primary-white-color);
   }
 }
+
 .header-button {
   background-color: inherit;
   width: 40px;
@@ -40,9 +40,19 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    fill: var(--primary-blue-accent-color);
+  }
 }
-.header-button__icon-menu {
-}
+
 .header-button__icon-close {
+  display: none;
+}
+
+.header-button.is-open .header-button__icon-close {
+  display: block;
+}
+.header-button.is-open .header-button__icon-menu {
   display: none;
 }

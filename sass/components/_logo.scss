@@ -5,8 +5,8 @@
 
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.166;
   color: var(--primary-blue-accent-color);
 
   &--studio-black {
@@ -14,10 +14,5 @@
   }
   &--studio-white {
     color: var(--primary-white-color);
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-    line-height: 1.166;
   }
 }

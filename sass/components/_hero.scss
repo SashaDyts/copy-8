@@ -1,31 +1,25 @@
 .hero {
-  margin: 0 auto;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  max-width: 1600px;
+  padding: 118px 0;
 
   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
     url(../images/heroback.jpg);
-
   background-color: var(--hero-footer-bg-color);
-
   text-align: center;
 }
-
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
-
 .hero__button {
   display: inline-block;
+
+  padding: 0;
   width: 200px;
   height: 50px;
   margin-top: 30px;
