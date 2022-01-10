@@ -881,6 +881,7 @@ img {
 
 @media screen and (max-width: 479px) {
   .modal {
+    padding: 40px 15px;
     width: 350px;
   }
 }
