@@ -111,6 +111,10 @@
   display: inline-flex;
 
   align-items: center;
+
+  @media screen and (max-width: 479px) {
+    display: inline;
+  }
 }
 
 .modal-form__policy-icon {
@@ -120,6 +124,10 @@
 
   border: 2px solid #212121;
   border-radius: 2px;
+
+  @media screen and (max-width: 479px) {
+    vertical-align: middle;
+  }
 }
 
 .modal-form__check:checked ~ .modal-form__accept .modal-form__policy-icon {
