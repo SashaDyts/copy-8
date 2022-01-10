@@ -1,6 +1,10 @@
 .page-header {
   padding: 10px 0;
 
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
+
   border-bottom: 1px solid var(--header-border);
   &__container {
     display: flex;
@@ -9,20 +13,37 @@
     @media screen and (min-width: 480px) {
       width: 480px;
     }
+    @media screen and (min-width: 768px) {
+      padding: 0 15px;
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 15px;
+      width: 1170px;
+    }
   }
 }
 .menu-thumb {
   display: none;
-  width: 100%;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
     left: 0;
 
     padding: 48px 40px;
-    max-width: 480px;
+    min-width: 100%;
 
     background-color: var(--primary-white-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+  &.is-open {
+    display: block;
   }
 }
 
@@ -43,6 +64,9 @@
   &:hover,
   &:focus {
     fill: var(--primary-blue-accent-color);
+  }
+  &.is-open {
+    z-index: 1;
   }
 }
 
